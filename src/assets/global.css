@@ -1,153 +1,226 @@
+/* =========================================
+   Variables de Tema (Dark Mode)
+   ========================================= */
 :root {
-  --bg: #0b0f13;
-  --card-bg: linear-gradient(180deg,#0f1724 0%,#0b1220 100%);
-  --muted: #9ca3af;
-  --text: #e6eef6;
-  --accent: #06d6f2;
-  --accent-deep: #00b7d9;
-  --card-border: rgba(255,255,255,0.04);
+  --bg-main: #121212;
+  --bg-card: #1e1e1e;
+  --text-primary: #ffffff;
+  --text-secondary: #a3a3a3;
+  --accent-cyan: #00e5ff;
+  --accent-text: #003333;
 }
 
-html, body {
-  height: 100%;
+/* =========================================
+   Reset y Estilos Base
+   ========================================= */
+* {
+  box-sizing: border-box;
   margin: 0;
-  background: var(--bg);
-  color: var(--text);
-  font-family: Inter, ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
 }
 
-/* Contenedor principal */
-.catalog {
-  width: 100%;
-  max-width: 480px; /* centrado en móvil */
-  margin: 0 auto;
-  padding: 20px 16px 80px;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+body {
+  background-color: var(--bg-main);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  padding: 20px; /* Margen general para pantallas móviles */
 }
 
-/* Tarjeta de producto */
+/* =========================================
+   Encabezados Principales (index.astro)
+   ========================================= */
+main > h1 {
+  font-size: 52px;
+  font-weight: 800;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  letter-spacing: -0.5px;
+}
+
+main > p {
+  color: var(--text-secondary);
+  font-size: 16px;
+  margin-bottom: 32px;
+}
+
+/* =========================================
+   Tarjeta de Producto (ProductCard.jsx)
+   ========================================= */
 .product-card {
-  background: var(--card-bg);
-  border: 1px solid var(--card-border);
+  background-color: var(--bg-card);
   border-radius: 12px;
-  padding: 16px;
-  box-shadow: 0 8px 24px rgba(2,6,23,0.6);
+  overflow: hidden; /* Corta la imagen en las esquinas superiores */
+  margin-bottom: 24px;
   display: flex;
   flex-direction: column;
-  gap: 12px;
-  transition: transform .18s ease, box-shadow .18s ease;
+  margin-bottom: 150px;
 }
 
-.product-card:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 14px 32px rgba(2,6,23,0.75);
-}
-
-/* Imagen */
-.product-image {
+/* =========================================
+   Slider con Swipe Nativo (Tipo Instagram)
+   ========================================= */
+.product-slider {
   width: 100%;
-  height: 180px;
-  object-fit: cover;
-  border-radius: 8px;
-  background: #071022;
-  border: 1px solid rgba(255,255,255,0.02);
+  position: relative;
+  background-color: #000;
 }
 
-/* Meta info */
-.card-meta {
+.slider-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory; /* Activa el "enganche" estilo carrusel */
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch; /* Desplazamiento fluido en iOS */
+  
+  /* Oculta la barra de scroll en todos los navegadores */
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE/Edge */
+}
+
+.slider-track::-webkit-scrollbar {
+  display: none; /* Chrome, Safari y Opera */
+}
+
+.slider-track img {
+  flex: 0 0 100%; /* Cada imagen ocupa exactamente el 100% del ancho del carrusel */
+  width: 100% !important;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  scroll-snap-align: start; /* Define el punto de enganche */
+  display: block;
+}
+
+/* =========================================
+   Slider e Imágenes (ProductSlider.jsx)
+   ========================================= */
+/* Sobrescribe el width: 100px en línea del JSX */
+.product-card img {
+  width: 100% !important;
+  height: auto;
+  aspect-ratio: 16 / 9; 
+  object-fit: cover;
+  display: block;
+}
+
+/* Contenedor de los botones Anterior/Siguiente */
+.product-card > div > div:last-child {
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  font-size: 12px;
+  padding: 12px 20px 0;
 }
 
-.badge {
-  padding: 4px 8px;
+/* Botones Anterior/Siguiente (Estilo sutil) */
+.product-card > div > div:last-child button {
+  background-color: transparent;
+  color: var(--text-secondary);
+  border: 1px solid #333;
   border-radius: 6px;
-  font-weight: 700;
-  font-size: 10px;
-  text-transform: uppercase;
-  letter-spacing: 0.06em;
-  color: #cfeefd;
-  background: rgba(6,214,242,0.08);
+  padding: 6px 12px;
+  font-size: 12px;
+  cursor: pointer;
 }
 
-/* Título y subtítulo */
-.title {
-  margin: 0;
-  font-size: 1.1rem;
+/* =========================================
+   Tipografía interna de la Tarjeta
+   ========================================= */
+/* Título del producto */
+.product-card h3 {
+  font-size: 24px;
   font-weight: 700;
-  line-height: 1.2;
+  margin: 16px 20px 8px 20px;
 }
 
-.subtitle {
-  margin: 4px 0 0;
-  color: var(--muted);
-  font-size: 0.85rem;
-  line-height: 1.3;
+/* Descripción */
+.product-card p:first-of-type {
+  color: var(--text-secondary);
+  font-size: 15px;
+  margin: 0 20px 16px 20px;
+  line-height: 1.4;
 }
 
 /* Precio */
-.price {
-  font-size: 1.2rem;
-  font-weight: 800;
-  color: var(--accent);
+.product-card p:last-of-type {
+  font-size: 26px;
+  margin: 0 20px 20px 20px;
 }
 
-/* Botón CTA */
-.cta {
-  margin-top: auto;
-  width: 100%;
-  background: linear-gradient(180deg,var(--accent),var(--accent-deep));
-  color: #031022;
+.product-card p:last-of-type strong {
+  font-weight: 800;
+}
+
+/* =========================================
+   Botón Principal de Compra
+   ========================================= */
+.product-card > button {
+  background-color: var(--accent-cyan);
+  color: var(--accent-text);
   border: none;
-  border-radius: 10px;
-  padding: 14px;
-  font-weight: 800;
-  text-align: center;
-  cursor: pointer;
-  transition: transform .12s ease, filter .12s ease;
-  box-shadow: 0 6px 18px rgba(6,214,242,0.12);
-}
-
-.cta:hover {
-  transform: translateY(-2px);
-  filter: brightness(.96);
-}
-
-/* Carrito */
-.cart {
-  background: rgba(255,255,255,0.02);
-  border-radius: 10px;
-  padding: 14px;
-  border: 1px solid rgba(255,255,255,0.02);
-}
-
-/* Slider */
-.slider-controls {
-  display: flex;
-  gap: 8px;
-  margin-top: 8px;
-  justify-content: center;
-}
-
-.slider-btn {
-  background: rgba(255,255,255,0.03);
-  color: var(--text);
-  border: 1px solid rgba(255,255,255,0.03);
-  padding: 6px 10px;
   border-radius: 8px;
-  cursor: pointer;
+  padding: 14px;
+  font-size: 18px;
   font-weight: 600;
-  font-size: 0.85rem;
+  width: calc(100% - 40px); /* Ocupa todo el ancho respetando el padding de 20px por lado */
+  margin: 0 20px 20px 20px;
+  cursor: pointer;
+  text-align: center;
 }
 
-/* Responsive móvil */
-@media (max-width: 640px) {
-  .product-image { height: 160px; }
-  .catalog { padding: 16px; gap: 16px; }
+.product-card > button:active {
+  background-color: #00b3cc;
+}
+
+/* Estado cuando el producto ya fue ordenado */
+.product-card > button.ordered {
+  background-color: #10b981; /* Verde éxito */
+  color: #ffffff;
+  cursor: default;
+  opacity: 0.9;
+}
+
+/* =========================================
+   Sección del Carrito (Cart.jsx)
+   ========================================= */
+h2 {
+  font-size: 24px;
+  margin-top: 40px;
+  margin-bottom: 16px;
+}
+
+ul {
+  list-style: none;
+  background-color: var(--bg-card);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 24px;
+}
+
+li {
+  padding: 12px 0;
+  border-bottom: 1px solid #333;
+  font-size: 16px;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+/* =========================================
+   Botón de WhatsApp (WhatsAppButton.jsx)
+   ========================================= */
+a[href^="https://wa.me"] {
+  text-decoration: none;
+}
+
+a[href^="https://wa.me"] button {
+  background-color: #25D366; /* Verde oficial de WhatsApp */
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px;
+  font-size: 16px;
+  font-weight: 600;
+  width: 100%;
+  cursor: pointer;
+  display: block;
+  margin-bottom: 40px;
 }
