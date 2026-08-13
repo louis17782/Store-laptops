@@ -39,7 +39,7 @@ main > h1 {
 
 main > p {
   color: var(--text-secondary);
-  font-size: 16px;
+  font-size: 36px;
   margin-bottom: 32px;
 }
 
@@ -125,7 +125,7 @@ main > p {
    ========================================= */
 /* Título del producto */
 .product-card h3 {
-  font-size: 24px;
+  font-size: 34px;
   font-weight: 700;
   margin: 16px 20px 8px 20px;
 }
@@ -133,7 +133,7 @@ main > p {
 /* Descripción */
 .product-card p:first-of-type {
   color: var(--text-secondary);
-  font-size: 15px;
+  font-size: 2rem;
   margin: 0 20px 16px 20px;
   line-height: 1.4;
 }
@@ -157,8 +157,8 @@ main > p {
   border: none;
   border-radius: 8px;
   padding: 14px;
-  font-size: 18px;
-  font-weight: 600;
+  font-size: 2.5rem;
+  font-weight: 800;
   width: calc(100% - 40px); /* Ocupa todo el ancho respetando el padding de 20px por lado */
   margin: 0 20px 20px 20px;
   cursor: pointer;
