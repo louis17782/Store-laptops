@@ -1,7 +1,7 @@
 export const products = [
   {
     id: 1,
-    title: "Dell Latitude 3310 13.3” Laptop Computer Core i3 16GB RAM 256GB SSD Windows 11 pro",
+    title: "Dell Latitude 3310 13.3” Laptop Computer Core i3 16GB RAM 256GB SSD Windows 11 pro (Refurbished)",
     price: 340,
     images: [
       "/dell1.jpg",
@@ -13,7 +13,7 @@ export const products = [
   },
     {
     id: 2,
-    title: "HP 14 Laptop, Intel Celeron N4120,4GB RAM,128GB Windows 11 Home",
+    title: "HP 14 Laptop, Intel Celeron N4120,4GB RAM,128GB Windows 11 Home (Nueva)",
     price: 359,
     images: [
       "/hp06.jpg",
@@ -27,7 +27,7 @@ export const products = [
   },
       {
     id: 4,
-    title: "Dell Latitude 5400 14 FHD i7-8665U 1.90GHz 8GB RAM 256GB SSD Windows 11 Pro",
+    title: "Dell Latitude 5400 14 FHD i7-8665U 1.90GHz 8GB RAM 256GB SSD Windows 11 Pro (Refurbished)",
     price: 339,
     images: [
       "/dell8.jpg",
@@ -38,7 +38,7 @@ export const products = [
   },
         {
     id: 5,
-    title: "HP 14 Laptop, Intel Processor N150, 4GB RAM 64GB, Verde , Windows 11 pro",
+    title: "HP 14 Laptop, Intel Processor N150, 4GB RAM 64GB, Verde , Windows 11 pro (Nueva)",
     price: 339,
     images: [
       "/verde1.jpg",
