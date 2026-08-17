@@ -26,17 +26,6 @@ export const products = [
     description: "La computadora portátil HP de 14 está diseñada para estudiantes con un procesador Intel Celeron N4120, 4 GB de RAM y 128 GB de capacidad de almacenamiento. Se ejecuta en Windows 11 Home, esta computadora portátil blanca cuenta con Intel UHD Graphics 600 integrada, una resolución máxima de 1366 x 768 y varias opciones de conectividad como Bluetooth y Wi-Fi."
   },
       {
-    id: 3,
-    title: "Dell Latitude 3420 14 pulgadas 16GB 512GB Windows 11 pro",
-    price: 349,
-    images: [
-      "/dell5.jpg",
-      "/dell6.jpg",
-      "/dell7.jpg"
-    ],
-    description: "El portátil empresarial Dell Latitude 3420 de 14 pulgadas está equipado con un procesador Intel Core i5-1145G7, 16 GB de RAM DDR4 y una unidad SSD PCIe NVMe de 512 GB. Cuenta con una pantalla IPS de 1920 x 1080, gráficos integrados Intel Iris Xe y funciona con Windows 11 Pro. Este portátil, que cumple con la certificación Energy Star, también incluye un teclado retroiluminado, lector de huellas dactilares y una batería con una autonomía de 10 horas, ideal para uso profesional."
-  },
-      {
     id: 4,
     title: "Dell Latitude 5400 14 FHD i7-8665U 1.90GHz 8GB RAM 256GB SSD Windows 11 Pro",
     price: 339,
