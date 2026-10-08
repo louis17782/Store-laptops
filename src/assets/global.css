@@ -97,7 +97,7 @@ main > p {
 .product-card img {
   width: 100% !important;
   height: auto;
-  aspect-ratio: 16 / 9; 
+  aspect-ratio: 16 / 14; 
   object-fit: cover;
   display: block;
 }

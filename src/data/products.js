@@ -1,29 +1,78 @@
 export const products = [
   {
     id: 1,
-    title: "Dell Latitude 3310 13.3” Laptop Computer Core i3 16GB RAM 256GB SSD Windows 11 pro (Refurbished)",
-    price: 340,
+    title: "Dell Latitude 5411 (14 pulgadas, 16GB, 256GB SSD, i7-10850H 2.70GHz) Window 11 pro original, Gris",
+    price: 0,
     images: [
-      "/dell1.jpg",
-      "/dell2.jpg",
-      "/dell3.jpg",
-      "/dell4.jpg"
+      "/5411-a.webp",
+      "/5411-b.webp",
+      "/5411-c.webp",
+      "/5411-d.webp",
+      "/5411-e.webp",
+      "/5411-details.jpg"
     ],
-    description: "Intel Core i3-8145U 2,10 GHz, 16 GB de RAM, Puertos: USB 3.2, HDMI, Cargador original"
+    description: " Laptop color gris con teclado iluminado, puerto LAN RJ-45, hdmi, bluetooth, usb 3.0, puerto C, lector de huellas, Cargador original"
   },
     {
     id: 2,
-    title: "HP 14 Laptop, Intel Celeron N4120,4GB RAM,128GB Windows 11 Home (Nueva)",
-    price: 359,
+    title: "Dell Vostro 3590 15.6 pulgadas 8GB 256GB, Carbon Black windows 11 pro",
+    price: 0,
     images: [
-      "/hp06.jpg",
-      "/hp07.jpg",
-      "/hp1.jpg",
-      "/hp2.jpg",
-      "/hp3.jpg",
-      "/hp4.jpg",
+      "/vostro1.webp",
+      "/vostro2.webp",
+      "/vostro3.webp",
+      "/vostro4.webp",
+      "/vostro-details.jpg"
     ],
-    description: "La computadora portátil HP de 14 está diseñada para estudiantes con un procesador Intel Celeron N4120, 4 GB de RAM y 128 GB de capacidad de almacenamiento. Se ejecuta en Windows 11 Home, esta computadora portátil blanca cuenta con Intel UHD Graphics 600 integrada, una resolución máxima de 1366 x 768 y varias opciones de conectividad como Bluetooth y Wi-Fi."
+    description: "Laptop de 15.6 pulgadas con 8GB de RAM y 256GB de almacenamiento, color negro carbono, Core i5 10th Generation 8gb ram 256 ssd almacenamiento LAN RJ-45, HDMI, VGA, cargador original."
+  },
+      {
+    id: 3,
+    title: "HP 15-DY0000 15.6 16GB 512GB SSD, Natural Silver windows 11 pro original",
+    price: 0,
+    images: [
+      "/hp15DY000-a.webp",
+      "/hp15DY000-b.webp",
+      "/hp15DY000-c.webp",
+      "/hp15DY000-details.jpg"
+    ],
+    description: "Pantalla táctil de 15.6 para una navegación más interactiva y cómoda, Core i5 de 8th generación, 10 horas de bateria, cargador original."
+  },
+        {
+    id: 4,
+    title: " HP EliteBook 850 G6 15.6 16GB 256GB Core™ i5-8365U, Silver windows 11 pro original",
+    price: 0,
+    images: [
+      "/hp850-a.webp",
+      "/hp850-b.webp",
+      "/hp850-c.webp",
+      "/hp850-details.jpg"
+    ],
+    description: "Intel Core i5 8th Gen 8gb de ram 256 ssd, 9 horas de bateria, color plata, Gama empresarial,  cargador original."
+  },
+          {
+    id: 5,
+    title: " Lenovo Ideapad L340 15.6 16GB 256GB, Gris granitom Windows 11 pro original",
+    price: 0,
+    images: [
+      "/lenovo1.webp",
+      "/lenovo2.webp",
+      "/lenovo3.webp",
+      "/lenovol340-details.jpg"
+    ],
+    description: "Intel Core i3 8th Generation 8gb de ram 256 ssd, 9.5 horas de bateria, LAN-RJ-45, hdml, USB 3.0, puerto C, teclado iluminado, cargador original."
+  },
+            {
+    id: 6,
+    title: " Dell Latitude E5570 15.6 in Intel i5 6300U 8GB DDR4 1TB SSD W10",
+    price: 0,
+    images: [
+      "/dell5570-a.webp",
+      "/dell5570-b.webp",
+      "/dell5570-c.webp",
+      "/dell5570-details.jpg"
+    ],
+    description: "Laptop para oficina/ empresarial, Intel Core i5 6th Generation 8gb de ram 1TB ssd, 5 horas de bateria, LAN-RJ-45, hdml, USB 3.0, teclado iluminado, cargador original."
   },
   // ... hasta 9 productos
 ];
