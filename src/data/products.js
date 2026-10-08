@@ -2,7 +2,7 @@ export const products = [
   {
     id: 1,
     title: "Dell Latitude 5411 (14 pulgadas, 16GB, 256GB SSD, i7-10850H 2.70GHz) Window 11 pro original, Gris",
-    price: 0,
+    price: 425,
     images: [
       "/5411-a.webp",
       "/5411-b.webp",
@@ -16,7 +16,7 @@ export const products = [
     {
     id: 2,
     title: "Dell Vostro 3590 15.6 pulgadas 8GB 256GB, Carbon Black windows 11 pro",
-    price: 0,
+    price: 399,
     images: [
       "/vostro1.webp",
       "/vostro2.webp",
@@ -29,7 +29,7 @@ export const products = [
       {
     id: 3,
     title: "HP 15-DY0000 15.6 16GB 512GB SSD, Natural Silver windows 11 pro original",
-    price: 0,
+    price: 419,
     images: [
       "/hp15DY000-a.webp",
       "/hp15DY000-b.webp",
@@ -41,7 +41,7 @@ export const products = [
         {
     id: 4,
     title: " HP EliteBook 850 G6 15.6 16GB 256GB Core™ i5-8365U, Silver windows 11 pro original",
-    price: 0,
+    price: 429,
     images: [
       "/hp850-a.webp",
       "/hp850-b.webp",
@@ -52,20 +52,20 @@ export const products = [
   },
           {
     id: 5,
-    title: " Lenovo Ideapad L340 15.6 16GB 256GB, Gris granitom Windows 11 pro original",
-    price: 0,
+    title: " Lenovo Ideapad L340 15.6 16GB 256GB, Gris granito Windows 11 pro original",
+    price: 389,
     images: [
       "/lenovo1.webp",
       "/lenovo2.webp",
       "/lenovo3.webp",
       "/lenovol340-details.jpg"
     ],
-    description: "Intel Core i3 8th Generation 8gb de ram 256 ssd, 9.5 horas de bateria, LAN-RJ-45, hdml, USB 3.0, puerto C, teclado iluminado, cargador original."
+    description: "Intel Core i3 8th Generation 8gb de ram 256 ssd, velocidad de 2.10GHz, 9.5 horas de bateria, LAN-RJ-45, hdml, USB 3.0, puerto C, teclado iluminado, cargador original."
   },
             {
     id: 6,
     title: " Dell Latitude E5570 15.6 in Intel i5 6300U 8GB DDR4 1TB SSD W10",
-    price: 0,
+    price: 340,
     images: [
       "/dell5570-a.webp",
       "/dell5570-b.webp",
